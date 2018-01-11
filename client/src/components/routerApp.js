@@ -13,7 +13,7 @@ class App extends Component {
     }
 
     render() {
-        const { userStore  } = this.props;
+        const { userStore } = this.props;
         const view = (userStore.users[0] && userStore.users[0].page) ? userStore.users[0].page : '';
         let views = <div />
         if (view == 'login')
@@ -22,12 +22,12 @@ class App extends Component {
             views = (<Success userStore={userStore} />)
         else if (view == 'delete')
             views = (<Delete userStore={userStore} />)
-        else 
+        else
             views = (<Profile userStore={userStore} />)
         return (
             <div>
                 <div className="navbar">
-                    <div><h1>Test Quantus  {`User: ${userStore.users[0].name}`|| ''}</h1></div>
+                    <div><h1>Test Quantus  {userStore.users[0].name ? `User: ${userStore.users[0].name}` : ''}</h1></div>
                 </div>
                 {views}
             </div>
