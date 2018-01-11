@@ -1,0 +1,343 @@
+body {
+    margin: 0 !important;
+    text-align: center;
+}
+
+#root{
+    padding-top: 100px;
+}
+
+.navbar {
+    box-shadow: 2px 6px 10px -4px black;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(64, 146, 165);
+    border: 2px solid rgb(206, 206, 206);
+    text-align: center;
+}
+
+.form-post {
+    box-shadow: 0 6px 18px -2px black;
+    margin: 30px 0px 35px 0px;
+    width: calc(100%);
+    height: 10px;
+    background-color: rgb(206, 206, 206);
+    display: inline-table;
+}
+
+.form-post>input {
+    margin: 20px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    height: 50px;
+}
+
+.body-status {
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+}
+
+.body-profile {
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    padding-top: 80px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 2px 6px 4px -4px black;
+}
+
+button {
+    box-shadow: 2px 6px 4px -4px black;
+    background-color: rgb(187, 206, 149);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+
+.post-button{
+    box-shadow: 2px 6px 4px -4px black;
+    width: 100px;
+    position: absolute;
+    top: 130px;
+    right: 48px;
+    padding: 10px;
+}
+
+button.destroy {
+    background-color: red;
+    position: absolute;
+    top: -32px;
+    right: -24px;
+    border-radius: 20px 0px 20px 20px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: rgb(64, 146, 165);
+}
+
+.circle{
+    box-shadow: 2px 6px 4px -4px black;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.circle-profile{
+    box-shadow: 2px 6px 4px -4px black;
+    background-color: grey;    
+    width: calc(100vw - 70vw);
+    height: calc(100vw - 70vw);
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.circle-status{
+    box-shadow: 2px 6px 4px -4px black;
+    background-color: grey;    
+    width: calc(100vw - 90vw);
+    height: calc(100vw - 90vw);
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.time-status {
+    position: absolute;
+    bottom: 6px;
+    font-size: 1vw;  
+}
+
+.time-status.right {
+    right: 6px;
+}
+
+.name-status {
+    position: absolute;
+    bottom: 6px;
+    font-size: 1vw;  
+}
+
+.name-status.right {
+    right: 46px;
+}
+.name-status.left {
+    left: 46px;
+}
+
+img.avatar {
+    box-shadow: 2px 6px 4px -4px black;
+    width: calc(100vw - 70vw);
+    height: calc(100vw - 70vw);
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+img.avatar_status{
+    background-color: grey;    
+    box-shadow: 2px 6px 4px -4px black;
+    width: calc(100vw - 90vw);
+    height: calc(100vw - 90vw);
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+hr {
+    border: 3px solid gray;
+    width: 80%;
+}
+
+div:after {
+    box-shadow: 2px 6px 4px -4px black;
+}
+
+@media screen and (max-width: 730px) {
+    button {
+        width: 100%;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+    }
+    .time-status {
+        font-size: 2vw;  
+    }
+    .name-status {
+        font-size: 2vw;  
+    }
+    button {
+        padding: 10px 10px;
+    }
+    button.destroy {
+        width: 50px;
+    }
+    .row-70{
+        padding: 5px !important;
+        margin: 15px;
+    }
+    .row-70 {
+        width: 60% !important;
+    }
+}
+
+[class^=row-] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.status_background{
+    background-color: rgb(187,206,149) !important;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: transparent;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table>thead:first-child>tr:first-child>th {
+    border-top: 0;
+}
+
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border-bottom-width: 2px;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+}
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+th {
+    text-align: left;
+}
+
+td, th {
+    padding: 0;
+}
+
+.row-50 {
+    width: 50%;
+}
+.row-30 {
+    width: 30%;
+}
+.row-70 {
+    width: 70%;
+    border: 6px solid white;
+    border-radius: 24px;
+}
+
+.row-100 {
+    width: 100%;
+    display: inline-table;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0px 6px 20px 5px black;
+}
+
+.row-30,
+.row-50,
+.row-70 {
+    float: left;
+}
+
+.row-30,
+.row-50,
+.row-70,
+.row-100 {
+    position: relative;
+    min-height: 1px;
+    padding: 10px;
+}
+
+.row-100 {
+    margin-top: 30px;
+}
+
+.appBody{
+    margin-bottom: 30px; 
+}
+
+.footer {
+    position: fixed;
+    z-index: 999999;
+    padding: 10px;
+    background-color: rgb(64, 146, 165);
+    border: 2px solid rgb(206, 206, 206);
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
